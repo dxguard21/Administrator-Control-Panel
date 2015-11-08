@@ -38,6 +38,20 @@ Your panel can be accessed like this: http://{your host name}/admin/
 <b>Implementation on your website</b>
 <p>This tutorial gives instructions on how to add the necessary code to allow things such as messages and page editing to work.<p>
 
+<i>To get messages to function:</i>
+
+You will need to copy and paste some extra code. They are in the untilities folder.
+
+Firstly create a three template page in you website directoy under a messages directory with the file names index.php, reply.php, send.php. 
+
+Then copy and paste the corresponding part into the body section of your each page.
+
+Then go through the send.php section and modify the message as per your wishes.
+
+<i>To get page editing to work:</i>
+
+COMMING SOON!
+
 NOTE: I am continually changing things on this repo. When I feel a release is in order I will release a new version in the releases. Otherwise the master branch is always changing and if you download it as a .zip file I do not guarantee it to work as intended. So do so at your own risk.   
 
 Version: 2.4.5
