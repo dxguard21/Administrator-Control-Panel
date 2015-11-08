@@ -56,12 +56,13 @@ NOTE: Seeing I cannot see your page structures and which pages you have if you w
 
 1. Copy and paste the home folder in the edits folder. Change it to the page name. Them open the new folder and open index.php find and replace every word that has homepage to the name of your new page. Then change the title from Edit Home Page to Edit {Your Page Name} Page.
 2. Then open the index.php file in the edit folder.
-2. 
+3. Go down to the page list section and copy and paste the Page Link line I have marked out and paste it below and rename the link from ./home to ./newpagename and the Home Page text to New Page Name Page 
 COMMING SOON!
 
 NOTE: I am continually changing things on this repo. When I feel a release is in order I will release a new version in the releases. Otherwise the master branch is always changing and if you download it as a .zip file I do not guarantee it to work as intended. So do so at your own risk.   
 
 Version: 2.4.5
+
 If there are any issues please email me: me@laughingquoll.net
 
 Changelog:
