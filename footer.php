@@ -1,0 +1,1 @@
+<footer><center><h5>Copyright 2015 LaughingQuoll Admin Dashboard v2.4.4</h5></center></footer>
