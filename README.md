@@ -1,10 +1,15 @@
-README Document.
+<h1> Administrator Control Panel </h1> <b>(Or simply put it Admin Dashboard) </b>
+<p> This is a project I created to give every developer a dashboard to use for their clients. <p>
+
+<b> Key Features: </b>
 
 How to implement:
 
 1.	Copy and paste whole .ZIP file into your public_html directory in your webserver.
 
-2.	Open settings.php in edit mode and set each feild as you wish. Then save it. Do not navigate to the panel via a web browser until this document is filled out.
+2.	Open settings.php in edit mode and set each feild as you wish. Then save it. Do not navigate to the panel via a web browser until this document is filled out. 
+Information regarding the salt feild: 
+<b>Make sure you change this. However after you create the databables be sure not to change it or your passwords will no longer be recognised and you will need to reinstal the whole system.<b>
 
 3.	Navigate to {your website hostname}/admin/mysql.php - It will run and create the datatables
 
