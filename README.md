@@ -10,7 +10,11 @@ How to implement:
 
 4.	Then open {your website hostname}/admin/ and fix any errors. If there are none you can go and delete the MySQL.php file.
 
-5.	Done. Enjoy your now fully working administration control panel.
+5.  Now log into the dashboard. The username is Administrator and the default password is Banana.
+
+6.  You will need to now go and change the passcode which can be done under the user tab on your dashboard.
+
+7.	Done. Enjoy your now fully working administration control panel.
 
 Your panel can be accessed like this: http://{your host name}/admin/
 
