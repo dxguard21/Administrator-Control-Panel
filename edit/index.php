@@ -77,8 +77,9 @@ require '/admin/settings.php';
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body"><center>
+                        	<!-- Page Link --> 
                         <a href="./home" class="btn btn-info">Home Page</a>
-                        
+                		<!-- Edit Page Link -->
                         </center>
                         </div>
                         <!-- /.panel-body -->
