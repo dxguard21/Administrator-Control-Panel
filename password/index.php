@@ -11,10 +11,15 @@ if($_SESSION["user_name"]) {
  require '/admin/settings.php';
  $conn = mysqli_connect("$host, $user, $pass");
  mysqli_select_db("$db");
- $result = mysqli_query("SELECT * FROM members WHERE username='" . $_SESSION["user_name"] . "' and password = '". $_POST["currentpassword"]."'");
+$username = mysqli_real_escape_string($_POST['user_name']);
+$password = mysqli_real_escape_string($_POST['password']);
+$currentpassword = mysqli_real_escape_string($_POST['currentpassword']);
+$hash = md5($salt . $currentpassword); 
+$hash = md5($salt . $password); 
+ $result = mysqli_query("SELECT * FROM members WHERE username='" . $username . "' and password = '". $currentpassword."'");
  $row  = mysqli_fetch_array($result);
  if(is_array($row)) {
- $sql = "UPDATE members SET `password` = '". $_POST["password"]."' WHERE `members`.`id` = 1;";
+ $sql = "UPDATE members SET `password` = '". $password ."' WHERE `members`.`id` = 1;";
  $result = mysqli_query($sql);
  mysqli_fetch_array($result);
  $message = "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-saved' aria-hidden='true'></span> Password Changed Successfully</div>";
