@@ -15,13 +15,13 @@
 
 6. Plus more on the way.
 
-How to implement:
+<b>How to implement:</b>
 
 1.	Copy and paste whole .ZIP file into your public_html directory in your webserver.
 
-2.	Open settings.php in edit mode and set each feild as you wish. Then save it. Do not navigate to the panel via a web browser until this document is filled out. 
-Information regarding the salt feild: 
-<b>Make sure you change this. However after you create the databables be sure not to change it or your passwords will no longer be recognised and you will need to reinstal the whole system.<b>
+2.	Open settings.php in edit mode and set each field as you wish. Then save it. Do not navigate to the panel via a web browser until this document is filled out. 
+Information regarding the salt field: 
+Make sure you change this. However after you create the datatables be sure not to change it or your passwords will no longer be recognized and you will need to reinstall the whole system.
 
 3.	Navigate to {your website hostname}/admin/mysql.php - It will run and create the datatables
 
@@ -35,17 +35,17 @@ Information regarding the salt feild:
 
 Your panel can be accessed like this: http://{your host name}/admin/
 
-<b>Implimentation on your website</b>
-<p>This tutorial gives instructions on how to add the neccary code to allow things such as messages and page editing to work.<p>
+<b>Implementation on your website</b>
+<p>This tutorial gives instructions on how to add the necessary code to allow things such as messages and page editing to work.<p>
 
-NOTE: I am continually changing things on this repo. When I feel a release is in order I will release a new version in the releases. Otherwise the master branch is always changing and if you download it as a .zip file I do not garentee it to work as intended. So do so at your own risk.   
+NOTE: I am continually changing things on this repo. When I feel a release is in order I will release a new version in the releases. Otherwise the master branch is always changing and if you download it as a .zip file I do not guarantee it to work as intended. So do so at your own risk.   
 
 Version: 2.4.5
 If there are any issues please email me: me@laughingquoll.net
 
 Changelog:
 2.4.5:
-Updated defunk MySQL codes. Now running MySQLi
+Updated defunkt MySQL codes. Now running MySQLi
 2.4.4
 Added a unified settings file. Cleaned up code.
-Also fixed a issue where login page would allow any password.	
+Also fixed an issue where login page would allow any password.	
