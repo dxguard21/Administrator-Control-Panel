@@ -1,6 +1,6 @@
 /* This is the code needed for implimentation on your website. */
 
-Messaging Page (For the frontend user)
+/* Messaging Page (For the frontend user) */
 
 <?php
 $name=addslashes($_POST['name']);
@@ -77,3 +77,26 @@ mail("$administrationemail","New Message From Website",$msg);
 
 <div class="se-pre-con"></div><center><br><br><br><h2>Success!</h2>
 <a href="http://factcats.org/" class="btn btn-success">Back to Site</a></center>
+
+
+/* Display your page edits on the website. */
+/* Section One - Place this at the top of the page you wish edits to show. This is one for a homepage with is included in the panel. */
+
+
+<?php
+
+// change these things
+require '/admin/settings.php';
+mysql_connect($host, $user, $pass);
+mysql_select_db($db);
+
+$result = mysql_query("SELECT * FROM `homepage`");
+
+while($row = mysql_fetch_assoc($result)){
+?>
+
+/* Section Two - This display the text on your website. However as of now you cannot edit the entire code. But that feature is comming soon */
+/* This is what you would put for each section of text on your site. Simply change the name to the name of the section. However make sure it matches what is in your database */
+<?php
+echo "".$row['name of section']."";
+?>
