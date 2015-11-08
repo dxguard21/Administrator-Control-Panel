@@ -2,6 +2,7 @@
 require 'settings.php';
 	mysqli_connect($host, $user, $pass);
 	mysqli_select_db($db);
+	$password = md5($salt . 'password');
 	mysqli_query("
 -- --------------------------------------------------------
 
@@ -22,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `members` (
 --
 
 INSERT INTO `members` (`id`, `username`, `password`) VALUES
-(1, 'Administrator', 'password');
+(1, 'Administrator', ''.$password.'');
 
 -- --------------------------------------------------------
 
