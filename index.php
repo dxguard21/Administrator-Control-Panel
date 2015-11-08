@@ -2,10 +2,18 @@
 session_start();
 $message="";
 if(count($_POST)>0) {
+<<<<<<< HEAD
 require '/admin/settings.php';
+=======
+require ''.$_SERVER['SERVER_NAME'].'/admin/settings.php';
+
+>>>>>>> origin/master
 	mysqli_connect($host, $user, $pass);
 	mysqli_select_db($db);
-$result = mysqli_query("SELECT * FROM members WHERE username='" . $_POST["user_name"] . "' and password = '". $_POST["password"]."'");
+	
+$username = mysqli_real_escape_string($_POST['user_name']);
+$password = mysqli_real_escape_string($_POST['password']);
+$result = mysqli_query("SELECT * FROM members WHERE username='" . $uername . "' and password = '". $password."'");
 $row  = mysqli_fetch_array($result);
 if(is_array($row)) {
 $_SESSION["user_id"] = $row[id];
