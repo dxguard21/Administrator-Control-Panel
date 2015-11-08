@@ -2,7 +2,7 @@
 session_start();
 
 if($_SESSION["user_name"]) {
-require ''.$_SERVER['SERVER_NAME'].'/admin/settings.php';
+require '/admin/settings.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

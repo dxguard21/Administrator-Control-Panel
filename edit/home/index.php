@@ -59,7 +59,7 @@ if($_SESSION["user_name"]) {
 <body>
 <?php 
 
-require ''.$_SERVER['SERVER_NAME'].'/admin/settings.php';
+require '/admin/settings.php';
 
 ?>
     
@@ -83,7 +83,7 @@ require ''.$_SERVER['SERVER_NAME'].'/admin/settings.php';
    <?php
 
 // change these things
-require ''.$_SERVER['SERVER_NAME'].'/admin/settings.php';
+require '/admin/settings.php';
 mysqli_connect($host, $user, $pass);
 mysqli_select_db($db);
 

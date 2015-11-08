@@ -7,7 +7,7 @@ if($_SESSION["user_name"]) {
 $catchphrase=addslashes($_POST['content']); 
 $aim=addslashes($_POST['title']);  
       if(isset($_POST['submit'])) {
-require ''.$_SERVER['SERVER_NAME'].'/admin/settings.php';
+require '/admin/settings.php';
 	mysqli_connect($host, $user, $pass);
 	mysqli_select_db($db);
 mysqli_query("UPDATE `homepage` SET title='$title', content='$content', aim='$aim' WHERE id=1"); 

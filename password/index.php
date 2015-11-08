@@ -8,7 +8,7 @@ if($_SESSION["user_name"]) {
  $message="";
  if(count($_POST)>0) {
 	 
- require ''.$_SERVER['SERVER_NAME'].'/admin/settings.php';
+ require '/admin/settings.php';
  $conn = mysqli_connect("$host, $user, $pass");
  mysqli_select_db("$db");
  $result = mysqli_query("SELECT * FROM members WHERE username='" . $_SESSION["user_name"] . "' and password = '". $_POST["currentpassword"]."'");

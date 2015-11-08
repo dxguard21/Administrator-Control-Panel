@@ -4,7 +4,7 @@ session_start();
 if($_SESSION["user_name"]) {
 $id = isset($_GET['id']) ? $_GET['id'] : '';
 
-require ''.$_SERVER['SERVER_NAME'].'/admin/settings.php';
+require '/admin/settings.php';
 
 ?>
 <!DOCTYPE html>
@@ -112,7 +112,7 @@ $conn->close();
                 <!-- /.col-lg-6 -->
             </div>
             <!-- /.row -->
-           <?php require '/'.$_SERVER['SERVER_NAME'].'/admin/footer.php'; ?>
+           <?php require '//admin/footer.php'; ?>
         </div>
         <!-- /#page-wrapper -->
     </div>
