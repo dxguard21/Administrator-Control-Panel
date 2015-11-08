@@ -49,7 +49,14 @@ Then copy and paste the corresponding part into the body section of your each pa
 Then go through the send.php section and modify the message as per your wishes.
 
 <i>To get page editing to work:</i>
+Copy and paste section one of the editing part in the code.php file to the top of the page you wish the edits to show.
+Then copy and paste section two to where you want the text to be displayed.
 
+NOTE: Seeing I cannot see your page structures and which pages you have if you want to change fields or add more pages to edit there are a few steps to take. This is what to do:
+
+1. Copy and paste the home folder in the edits folder. Change it to the page name. Them open the new folder and open index.php find and replace every word that has homepage to the name of your new page. Then change the title from Edit Home Page to Edit {Your Page Name} Page.
+2. Then open the index.php file in the edit folder.
+2. 
 COMMING SOON!
 
 NOTE: I am continually changing things on this repo. When I feel a release is in order I will release a new version in the releases. Otherwise the master branch is always changing and if you download it as a .zip file I do not guarantee it to work as intended. So do so at your own risk.   
