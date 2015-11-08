@@ -9,6 +9,9 @@ require 'settings.php';
 	
 $username = mysqli_real_escape_string($_POST['user_name']);
 $password = mysqli_real_escape_string($_POST['password']);
+if (!($stmt = $mysqli->prepare("SELECT * FROM members WHERE username='" . $uername . "' and password = '". $password."'"))) {
+    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+}
 $result = mysqli_query("SELECT * FROM members WHERE username='" . $uername . "' and password = '". $password."'");
 $row  = mysqli_fetch_array($result);
 if(is_array($row)) {
