@@ -2,12 +2,8 @@
 session_start();
 $message="";
 if(count($_POST)>0) {
-<<<<<<< HEAD
-require '/admin/settings.php';
-=======
-require ''.$_SERVER['SERVER_NAME'].'/admin/settings.php';
+require 'settings.php';
 
->>>>>>> origin/master
 	mysqli_connect($host, $user, $pass);
 	mysqli_select_db($db);
 	
