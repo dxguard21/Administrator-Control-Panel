@@ -18,7 +18,7 @@ How to implement:
 
 Your panel can be accessed like this: http://{your host name}/admin/
 
-NOTE: I am continually changing things on this repo. When I feel a release is in order I will release a new version in the release branch. Otherwise the master branch is always changing and if you download it as a .zip file I do not garentee it to work as intended. So do so at your own risk.   
+NOTE: I am continually changing things on this repo. When I feel a release is in order I will release a new version in the releases. Otherwise the master branch is always changing and if you download it as a .zip file I do not garentee it to work as intended. So do so at your own risk.   
 
 Version: 2.4.5
 If there are any issues please email me: me@laughingquoll.net
