@@ -10,17 +10,7 @@ require 'settings.php';
 $username = mysqli_real_escape_string($_POST['user_name']);
 $password = mysqli_real_escape_string($_POST['password']);
 $hash = md5($salt . $password); 
-if (!($stmt = $mysqli->prepare("SELECT * FROM members WHERE username='" . $username . "' and password = '". $hash."'"))) {
-    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-}
-$id = 1;
-if (!$stmt->bind_param("i", $id)) {
-    echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
-}
 
-if (!$stmt->execute()) {
-    echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
-}
 $result = mysqli_query("SELECT * FROM members WHERE username='" . $uername . "' and password = '". $password."'");
 $row  = mysqli_fetch_array($result);
 if(is_array($row)) {
