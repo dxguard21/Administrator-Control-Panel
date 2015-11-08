@@ -9,7 +9,8 @@ require 'settings.php';
 	
 $username = mysqli_real_escape_string($_POST['user_name']);
 $password = mysqli_real_escape_string($_POST['password']);
-if (!($stmt = $mysqli->prepare("SELECT * FROM members WHERE username='" . $username . "' and password = '". $password."'"))) {
+$hash = md5($salt . $password); 
+if (!($stmt = $mysqli->prepare("SELECT * FROM members WHERE username='" . $username . "' and password = '". $hash."'"))) {
     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
 }
 $id = 1;
