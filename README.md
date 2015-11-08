@@ -1,7 +1,19 @@
-<h1> Administrator Control Panel </h1> <b>(Or simply put it Admin Dashboard) </b>
-<p> This is a project I created to give every developer a dashboard to use for their clients. <p>
+<h1>Administrator Control Panel </h1> <b>(Or simply put it Admin Dashboard) </b>
+<p>This is a project I created to give every developer a dashboard to use for their clients. <p>
 
-<b> Key Features: </b>
+<b>Key Features: </b>
+
+1. Edit pages of your website.
+
+2. Messaging system. 
+
+3. Upload files to a specific directory. - In the works.
+
+4. Change password.
+
+5. Create to-do lists with progress bars. - In the works.
+
+6. Plus more on the way.
 
 How to implement:
 
@@ -22,6 +34,9 @@ Information regarding the salt feild:
 7.	Done. Enjoy your now fully working administration control panel.
 
 Your panel can be accessed like this: http://{your host name}/admin/
+
+<b>Implimentation on your website</b>
+<p>This tutorial gives instructions on how to add the neccary code to allow things such as messages and page editing to work.<p>
 
 NOTE: I am continually changing things on this repo. When I feel a release is in order I will release a new version in the releases. Otherwise the master branch is always changing and if you download it as a .zip file I do not garentee it to work as intended. So do so at your own risk.   
 
