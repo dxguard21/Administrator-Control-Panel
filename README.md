@@ -65,14 +65,25 @@ NOTE: Seeing I cannot see your page structures and which pages you have if you w
 5. After the table is created take not of the order in which the collums are in.
 
 6. Open the process.php file in the /edit/newpage/ directory. And go to line 13 and change `homepage` to the name of the new page. 
+
 7. Then you will need to change the SET title='$title', content='$content', aim='$aim' to the fields in the datatable. Just add ", aim='$aim'" after the last field in the SET statment. Then as done before change the names to the corrosponding fields. Save file and continue.
+
 8. Next you will need to go into the root of the admin dashboard and open nav.php
+
 9. Go down to line 70 and copy and paste the indicated code under the last of the pages that is in that list.
+
 10. Change the content of the new list item to that of the new page. But make sure the href="" is the address to the folder you created before otherwise the link wont function.
+
 11. Follow section two on How to impliment into your website. 
+
 12. This is the most important step. Go back to your MySQL database and INSERT into your database all the text sections of the new page. 
+
 13. Next you need to edit the index.php file in the /edit/newpage/ directory. Go and copy and paste the indicated form sections paste it under the next for each page field you have. Then go through and change each of the keywords to that of the field that form section will account for.
-13. Next access the control panel and go to the edit section of the navbar and click it. If it works your new page should show there. Click it and it should take you to your editing page. If the new text shows in the text fields. Then all is well. 15. Now navigate to your website and see if the text is showing.
+
+14. Next access the control panel and go to the edit section of the navbar and click it. If it works your new page should show there. Click it and it should take you to your editing page. If the new text shows in the text fields. Then all is well. 
+15. Now navigate to your website and see if the text is showing. If it is. Try making a edit to the page. If the edit shows its all good.
+
+16. Any issues create a new issue in the issues section and I will assist the best I can. 
 
 NOTE: I am continually changing things on this repo. When I feel a release is in order I will release a new version in the releases. Otherwise the master branch is always changing and if you download it as a .zip file I do not guarantee it to work as intended. So do so at your own risk.   
 
